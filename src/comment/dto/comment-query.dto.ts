@@ -14,7 +14,6 @@ export class CommentQueryDto {
   @IsUUID()
   articleId: string;
 
- 
   @IsOptional()
   @Type(() => Number)
   @IsInt()
@@ -29,6 +28,7 @@ export class CommentQueryDto {
   limit?: number;
 
   @ApiPropertyOptional()
+  @IsOptional()
   @IsString()
   sortBy?: string;
 
