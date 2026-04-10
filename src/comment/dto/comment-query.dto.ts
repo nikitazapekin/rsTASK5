@@ -14,7 +14,7 @@ export class CommentQueryDto {
   @IsUUID()
   articleId: string;
 
-  @ApiPropertyOptional()
+ 
   @IsOptional()
   @Type(() => Number)
   @IsInt()
