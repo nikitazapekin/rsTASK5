@@ -2,7 +2,9 @@
   "moduleFileExtensions": ["ts", "js"],
   "rootDir": "test",
   "testEnvironment": "node",
+  "globalSetup": "./global-setup.js",
+  "globalTeardown": "./global-teardown.js",
   "transform": {
-    "^.+\\.(t|j)s$": "ts-jest"
+    "^.+\\.ts$": "ts-jest"
   }
 }
