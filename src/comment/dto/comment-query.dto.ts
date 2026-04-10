@@ -29,7 +29,6 @@ export class CommentQueryDto {
   limit?: number;
 
   @ApiPropertyOptional()
-  @IsOptional()
   @IsString()
   sortBy?: string;
 
